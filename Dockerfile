@@ -5,6 +5,7 @@ WORKDIR /app
 COPY . .
 
 RUN npm install -g pnpm
+RUN pnpm install
 RUN pnpm run build
 
 ENV NUXT_HOST=0.0.0.0
